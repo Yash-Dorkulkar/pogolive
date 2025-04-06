@@ -1,0 +1,152 @@
+/* Dark theme styles */
+body {
+    background-color: #121212; 
+    color: #EAEAEA; 
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #1F1F1F;
+    padding: 20px;
+}
+
+header h1 {
+    color: #BB86FC; 
+    animation: fadeIn 2s ease-in-out; 
+    margin: 0; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #BB86FC; 
+    transition: color 0.3s ease;
+    text-align: left; 
+    display: block; 
+}
+
+nav ul li a:hover {
+    color: #3700B3; 
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #BB86FC; 
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #333333; 
+    color: #EAEAEA; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    color: #BB86FC; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Link hover effect */
+nav ul li a:hover {
+    color: #3700B3;
+}
+
+@media (min-width: 768px) {
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    main {
+        padding: 40px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.5rem; 
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; 
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem; 
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; 
+    }
+
+    footer p {
+        font-size: 0.9rem; 
+    }
+}

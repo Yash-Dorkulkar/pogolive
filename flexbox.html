@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Flexbox and Grid in CSS</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #EAEAEA;
+}
+
+header {
+    background-color: #1F1F1F;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  
+    animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+    color: #BB86FC;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #BB86FC;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3700B3;
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #BB86FC;
+}
+
+pre {
+    background-color: #333333;
+    color: #EAEAEA;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    position: relative; 
+}
+
+footer {
+    background-color: #1F1F1F;
+    text-align: center;
+    padding: 10px;
+    color: #BB86FC;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Flexbox Section */
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.flexbox-item {
+    background-color: #BB86FC;
+    padding: 20px;
+    color: white;
+    width: 30%;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.flexbox-item:hover {
+    transform: scale(1.1);
+}
+
+/* Grid Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.grid-item {
+    background-color: #3700B3;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Layout */
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.responsive-item {
+    background-color: #03DAC5;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.responsive-item:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 15px; 
+    }
+
+    header h1 {
+        font-size: 1.2rem; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; 
+    }
+
+    
+    .flexbox-container {
+        flex-direction: column; 
+    }
+
+    .flexbox-item {
+        width: 93%; 
+        margin-bottom: 10px; 
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .grid-item {
+        width: 92%; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Flexbox and Grid in CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#responsive">Responsive Layout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flexbox">
+            <h2>Flexbox</h2>
+            <p>Flexbox (Flexible Box Layout) is a layout model that allows items within a container to be aligned and distributed dynamically. It's particularly useful for creating responsive designs.</p>
+
+            <h3>Basic Flexbox Example</h3>
+            <div class="flexbox-container">
+                <div class="flexbox-item">Item 1</div>
+                <div class="flexbox-item">Item 2</div>
+                <div class="flexbox-item">Item 3</div>
+            </div>
+
+            <pre><code>
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox-item {
+    background-color: #BB86FC;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+}
+            </code></pre>
+        </section>
+
+        <section id="grid">
+            <h2>Grid</h2>
+            <p>CSS Grid Layout allows us to create two-dimensional layouts by defining rows and columns. It offers more control over both vertical and horizontal alignments compared to Flexbox.</p>
+
+            <h3>Basic Grid Example</h3>
+            <div class="grid-container">
+                <div class="grid-item">Item 1</div>
+                <div class="grid-item">Item 2</div>
+                <div class="grid-item">Item 3</div>
+                <div class="grid-item">Item 4</div>
+            </div>
+
+            <pre><code>
+.grid-container {
+    display: grid;
+    grid-template-columns: 
+      repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #3700B3;
+    padding: 20px;
+    color: white;
+}
+            </code></pre>
+        </section>
+
+        <section id="responsive">
+            <h2>Responsive Layout</h2>
+            <p>This section demonstrates a layout that adapts to various screen sizes using CSS Grid and Flexbox together.</p>
+
+            <h3>Responsive Flexbox and Grid Example</h3>
+            <div class="responsive-container">
+                <div class="responsive-item">Flexbox Item 1</div>
+                <div class="responsive-item">Flexbox Item 2</div>
+                <div class="responsive-item">Flexbox Item 3</div>
+            </div>
+
+            <pre><code>
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.responsive-item {
+    background-color: #03DAC5;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .responsive-item {
+        width: 100%;
+    }
+}
+            </code></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yash Dorkulkar</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="yash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yashdorkulkar11@gmail.com"); 
+        })();
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <a href="#">Yash</a>
+                </div>
+                <!-- Menu Toggle Icon (Hamburger) -->
+                <div class="menu-toggle" id="menuToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Navbar Links -->
+                <ul class="navbar-links" id="navbarLinks">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Yash Dorkulkar</h1>
+            <p class="hero-subtitle">A Passionate Web Developer Crafting Beautiful Websites</p>
+            <a href="#projects" class="cta-button">See My Work</a>
+        </div>
+    </section>
+
+
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="/images/yash-image.png" alt="Your Image" class="about-photo">
+            </div>
+            <div class="about-content">
+                <h2 class="about-title">About Me</h2>
+                <p class="about-description">
+                    Hi, I'm Yash Dorkulkar, a passionate web developer with a love for creating elegant and user-friendly websites. I specialize in front-end and back-end development.
+                </p>
+                <p class="about-description">
+                I'm always eager to work on projects that challenge my skills and push me to grow as a developer.
+                </p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Resume Section -->
+ <section class="resume-section" id="resume">
+    <div class="resume-container">
+        <h2 class="resume-title">My Resume</h2>
+        <div class="resume-content">
+
+            <!-- Experience Section -->
+            <div class="experience">
+                <h3 class="section-title">Experience</h3>
+                <div class="job">
+                    <i class="fas fa-laptop-code icon"></i>
+                    <div>
+                        <p class="job-title">Web Developer</p>
+                        <p class="job-description">Developed and maintained websites for clients, ensuring responsive design and optimal user experience. Worked with HTML, CSS, JavaScript, and various frameworks.</p>
+                    </div>
+                </div>
+                <div class="job">
+                    <i class="fas fa-desktop icon"></i>
+                    <div>
+                        <p class="job-title">Frontend Developer</p>
+                        <p class="job-description">Worked on improving the frontend UI for a major e-commerce platform using React and Redux. Collaborated with backend developers to create a seamless user interface.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education">
+                <h3 class="section-title">Education</h3>
+                <div class="school">
+                    <i class="fas fa-university icon"></i>
+                    <div>
+                        <p class="school-name">Bachelor of Information Technology</p>
+                        <p class="school-description">Mumbai University 2022 - 2025</p>
+                    </div>
+                </div>
+                <div class="school">
+                    <i class="fas fa-school icon"></i>
+                    <div>
+                        <p class="school-name">High School In Science</p>
+                        <p class="school-description">Alfred Gradney High School, 2020 - 2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h3 class="section-title">Skills</h3>
+                <div class="skill">
+                    <i class="fas fa-code icon"></i>
+                    <div>
+                        <p class="skill-name">HTML & CSS</p>
+                        <p class="skill-description">Proficient in creating responsive and clean web designs with HTML5 and CSS3.</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-square-js icon"></i>
+                    <div>
+                        <p class="skill-name">JavaScript</p>
+                        <p class="skill-description">Experienced with vanilla JavaScript as well as JavaScript frameworks like React.js and Vue.js.</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react icon"></i>
+                    <div>
+                        <p class="skill-name">React.js</p>
+                        <p class="skill-description">Building dynamic user interfaces with React.js, including state management with Redux.</p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-git-alt icon"></i>
+                    <div>
+                        <p class="skill-name">Version Control (Git)</p>
+                        <p class="skill-description">Comfortable using Git for version control, including pushing, pulling, and merging code repositories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Download Button -->
+            <a href="Yash__Resume.pdf" download class="resume-btn">Download Resume</a>
+        </div>
+    </div>
+</section>
+
+    
+        <section class="portfolio-section" id="projects">
+            <div class="portfolio-container">
+                <h2 class="portfolio-title">My Work</h2>
+                <p class="portfolio-subtitle">Here are some of the projects I've worked on recently.</p>
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item">
+                        <img src="/images/image.png" alt="Project 1" class="portfolio-image">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-project-title">Project 1</h3>
+                            <p class="portfolio-description">A description of the project, the technologies used, and the problem it solved.</p>
+                            <a href="https://link-to-project.com" class="portfolio-button">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="portfolio-item">
+                        <img src="/images/Screenshot 2025-03-12 183722.png" alt="Project 2" class="portfolio-image">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-project-title">Project 2</h3>
+                            <p class="portfolio-description">A description of the project, the technologies used, and the problem it solved.</p>
+                            <a href="https://link-to-project.com" class="portfolio-button">View Project</a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="portfolio-item">
+                        <img src="/images/Screenshot 2025-03-12 184343.png" alt="Project 3" class="portfolio-image">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-project-title">Project 3</h3>
+                            <p class="portfolio-description">A description of the project, the technologies used, and the problem it solved.</p>
+                            <a href="https://link-to-project.com" class="portfolio-button">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+            <h2 class="testimonials-title">What Clients Say</h2>
+            <p class="testimonials-subtitle">Here are some reviews from clients I've worked with.</p>
+            <div class="testimonials-list">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">"Yash exceeded my expectations! His attention to detail and dedication to the project was incredible."</p>
+                        <div class="testimonial-author">
+                            <img src="/images/Yash_img-1.png" alt="Client 1" class="testimonial-author-image">
+                            <div class="testimonial-author-info">
+                                <h3 class="testimonial-author-name">Yash Dorkulkar</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">"Fantastic work! Yash brought my ideas to life and created a stunning website for our business."</p>
+                        <div class="testimonial-author">
+                            <img src="client2.jpg" alt="Client 2" class="testimonial-author-image">
+                            <div class="testimonial-author-info">
+                                <h3 class="testimonial-author-name">Om Nayak</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-quote">"Working with Yash was a pleasure. He is professional, communicative, and always delivers on time."</p>
+                        <div class="testimonial-author">
+                            <img src="client3.jpg" alt="Client 3" class="testimonial-author-image">
+                            <div class="testimonial-author-info">
+                                <h3 class="testimonial-author-name">Umesh Koli</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <h2 class="services-title">My Services</h2>
+            <p class="services-subtitle">Here are the services I offer to help you with your next project.</p>
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">I build responsive, fast, and modern websites tailored to your needs, ensuring a seamless user experience.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">I create user-friendly mobile apps for both iOS and Android, designed to engage your users effectively.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">I design intuitive user interfaces and user experiences that make your website or app easy to use and beautiful to interact with.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-section" id="blog">
+        <div class="blog-container">
+            <h2 class="blog-title">Latest Articles</h2>
+            <p class="blog-subtitle">Stay updated with my latest blog posts and articles on web development, technology, and more.</p>
+            <div class="blog-posts">
+                <!-- Blog Post 1 -->
+                <div class="blog-post">
+                    <img src="/images/image-removebg-preview.png" alt="Post 1" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title">How to Build a Responsive Website</h3>
+                        <p class="blog-post-excerpt">In this article, I walk you through the process of building a responsive website using modern HTML, CSS, and JavaScript techniques.</p>
+                        <a href="code.html" class="blog-post-read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post 2 -->
+                <div class="blog-post">
+                    <img src="/images/img1.png" alt="Post 2" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title">Understanding Flexbox and Grid in CSS</h3>
+                        <p class="blog-post-excerpt">Learn how to leverage CSS Flexbox and Grid to create complex layouts with ease and make your websites more responsive.</p>
+                        <a href="flexbox.html" class="blog-post-read-more">Read More</a>
+                    </div>
+                </div>
+                <!-- Blog Post 3 -->
+                <div class="blog-post">
+                    <img src="/images/img2.png" alt="Post 3" class="blog-post-image">
+                    <div class="blog-post-content">
+                        <h3 class="blog-post-title">Top 5 JavaScript Frameworks to Learn in 2025</h3>
+                        <p class="blog-post-excerpt">Explore the most popular JavaScript frameworks in 2025 and understand which one might be right for your next project.</p>
+                        <a href="js.html" class="blog-post-read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'd love to hear from you! Whether you have a question or want to work together, feel free to reach out.</p>
+
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="contact-submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer who loves creating interactive and dynamic websites. Let's connect and create something amazing together!</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h2>Follow Me</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yash-dorkulkar-3aa869284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href=" https://github.com/Yash-Dorkulkar/Yash_1821" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/y_a_s_h_1821?igsh=dmkwbXJnNXJuM2lm" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Yash Dorkulkar. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+// JavaScript to toggle the navbar on and off in mobile view
+const menuToggle = document.getElementById('menuToggle');
+const navbarLinks = document.getElementById('navbarLinks');
+
+// Add event listener to toggle menu
+menuToggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+});
+
+// Close the navbar when a navigation link is clicked
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navbarLinks.classList.remove('active'); // Close the navbar
+    });
+});
+
+
+        // Handle form submission
+        const form = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Prepare the data for EmailJS
+            const formData = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            // Send email using EmailJS
+            emailjs.send("your_service_id", "your_template_id", formData)
+                .then(function(response) {
+                    console.log("SUCCESS", response);
+                    formStatus.textContent = "Message sent successfully!";
+                    formStatus.style.color = "green";
+                    form.reset(); // Reset the form fields after successful submission
+                }, function(error) {
+                    console.log("FAILED", error);
+                    formStatus.textContent = "Oops! Something went wrong. Please try again.";
+                    formStatus.style.color = "red";
+                });
+        });
+        
+    </script>
+
+ 
+</body>
+</html>
